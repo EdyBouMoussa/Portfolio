@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included within element widths */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Set up the page container as a flex column */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Make the main content area grow to fill space */
+header {
+    flex: 1;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(90deg, #7f7a7a, #333);
+}
+
+/* Left Side: Info Styling */
+.Info {
+    display: flex;
+    flex-direction: column; /* Stack Name and Profile vertically */
+    padding: 5px;
+    gap: 5px;
+    margin-left: 20px;
+    border-radius: 8px; /* Optional: To round corners of the info box */
+}
+
+/* Styling for Name and Profile Text */
+#Name {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #FF6625;
+}
+
+#Profile {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* Right Side: Navbar Links */
+.navbar-container {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Style for Button Links */
+.button-link {
+    color: #fff;
+    background-color: #FF4105;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Ensures img inside aligns with padding */
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+}
+
+.button-link:hover {
+    background-color: #FF8A47;
+    transform: translateY(-2px);
+}
+
+/* Style for Logo Images */
+.nav-logo {
+    width: 24px; /* Set logo width */
+    height: 24px; /* Set logo height */
+    max-width: 100%; /* Ensures logos don’t stretch */
+    transition: filter 0.3s ease;
+}
+
+.nav-logo:hover {
+    filter: brightness(1.2);
+}
+
+.project-logo {
+    width: 24px; /* Set logo width */
+    height: 24px; /* Set logo height */
+    max-width: 100%; /* Ensures logos don’t stretch */
+}
+
+.img-row {
+    display: inline-block;
+    gap: 10px;
+}
+
+#title {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #FF6625;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border: 2px solid #FF6625;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #FFFAF0;
+    background: linear-gradient(135deg, #FFFAF0 0%, #FFF5E0 100%);
+    width: 100%; /* Makes it expand within its container */
+    max-width: 450px;
+    min-width: 200px; /* Ensures there's a minimum width */
+}
+
+.project p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #303030;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%; /* Ensures text respects container width */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover for emphasis */
+    border-color: #FF8A47;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 50px; /* Spacing between project items */
+    margin-left: 40px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E0E0E0;
+}
+
+.project-page{
+    display: grid;
+    gap:35px;
+    background-color: #F5F5F5; /* Light gray for a soft contrast */
+    padding: 20px; /* Adds space around the project section */
+    background: linear-gradient(180deg, #F5F5F5 0%, #FFF 100%);
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    gap:120px;
+    background: linear-gradient(90deg, #333, #7f7a7a);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+
+.footer-info p,
+.footer-info a {
+    margin: 0;
+    color: #FF8A47; /* Link color */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-info a:hover {
+    color: #FF6625; /* Hover color */
+}
+
+.foot-logo {
+    width: 24px; /* Icon size */
+    height: 24px;
+    transition: transform 0.3s; /* Animation for hover */
+    transition: filter 0.3s ease;
+}
+
+.foot-logo:hover {
+    filter: brightness(1.2);
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column; /* Stack footer items on small screens */
+    }
+}
+
+
+/* Responsive Navbar */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically on small screens */
+        align-items: center;
+    }
+
+    .navbar-container {
+        margin-top: 10px; /* Space between info and links */
+    }
+}
