@@ -5,29 +5,29 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
 }
 
-/* Set up the page container as a flex column */
+
 .page-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
 }
 
-/* Make the main content area grow to fill space */
+
 header {
     flex: 1;
 }
 
-/* Navbar Styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 15px;
     position: sticky;
     top: 0;
@@ -35,19 +35,19 @@ header {
     background: linear-gradient(90deg, #7f7a7a, #333);
 }
 
-/* Left Side: Info Styling */
+
 .Info {
     display: flex;
-    flex-direction: column; /* Stack Name and Profile vertically */
+    flex-direction: column;
     padding: 5px;
     gap: 5px;
     margin-left: 20px;
-    border-radius: 8px; /* Optional: To round corners of the info box */
+    border-radius: 8px; 
 }
 
-/* Styling for Name and Profile Text */
+
 #Name {
-    font-size: 24px;
+    font-size: 34px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: #FF6625;
@@ -59,10 +59,10 @@ header {
     color: #FFFFFF;
 }
 
-/* Right Side: Navbar Links */
+
 .navbar-container {
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 20px;
 }
 
 .navbar a {
@@ -80,7 +80,7 @@ header {
     background-color: #555;
 }
 
-/* Style for Button Links */
+
 .button-link {
     color: #fff;
     background-color: #FF4105;
@@ -91,9 +91,9 @@ header {
     text-decoration: none;
     transition: background 0.3s, transform 0.2s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex; /* Ensures img inside aligns with padding */
-    align-items: center; /* Centers the image vertically */
-    justify-content: center; /* Centers the image horizontally */
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
 }
 
 .button-link:hover {
@@ -101,11 +101,11 @@ header {
     transform: translateY(-2px);
 }
 
-/* Style for Logo Images */
+
 .nav-logo {
-    width: 24px; /* Set logo width */
-    height: 24px; /* Set logo height */
-    max-width: 100%; /* Ensures logos don’t stretch */
+    width: 24px;
+    height: 24px; 
+    max-width: 100%;
     transition: filter 0.3s ease;
 }
 
@@ -114,9 +114,9 @@ header {
 }
 
 .project-logo {
-    width: 24px; /* Set logo width */
-    height: 24px; /* Set logo height */
-    max-width: 100%; /* Ensures logos don’t stretch */
+    width: 24px; 
+    height: 24px; 
+    max-width: 100%;
 }
 
 .img-row {
@@ -141,9 +141,9 @@ header {
     border-radius: 10px;
     background-color: #FFFAF0;
     background: linear-gradient(135deg, #FFFAF0 0%, #FFF5E0 100%);
-    width: 100%; /* Makes it expand within its container */
+    width: 100%; 
     max-width: 450px;
-    min-width: 200px; /* Ensures there's a minimum width */
+    min-width: 200px; 
 }
 
 .project p {
@@ -154,20 +154,20 @@ header {
     color: #303030;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    max-width: 100%; /* Ensures text respects container width */
+    max-width: 100%; 
 }
 
 .project:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
-    transition: transform 0.3s ease; /* Smooth transition */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover for emphasis */
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
     border-color: #FF8A47;
 }
 
 .project-container {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    gap: 50px; /* Spacing between project items */
+    flex-wrap: wrap; 
+    gap: 50px; 
     margin-left: 40px;
     padding: 20px;
     background-color: #FFFFFF;
@@ -179,18 +179,18 @@ header {
 .project-page{
     display: grid;
     gap:35px;
-    background-color: #F5F5F5; /* Light gray for a soft contrast */
-    padding: 20px; /* Adds space around the project section */
+    background-color: #F5F5F5;
+    padding: 20px; 
     background: linear-gradient(180deg, #F5F5F5 0%, #FFF 100%);
 }
 
-/* Footer Styling */
+
 .footer {
     display: flex;
     flex-direction: row;
     background-color: #333;
     color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
     padding: 20px 0;
     text-align: center;
@@ -209,20 +209,20 @@ header {
 .footer-info p,
 .footer-info a {
     margin: 0;
-    color: #FF8A47; /* Link color */
+    color: #FF8A47;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
 }
 
 .footer-info a:hover {
-    color: #FF6625; /* Hover color */
+    color: #FF6625;
 }
 
 .foot-logo {
-    width: 24px; /* Icon size */
+    width: 24px;
     height: 24px;
-    transition: transform 0.3s; /* Animation for hover */
+    transition: transform 0.3s;
     transition: filter 0.3s ease;
 }
 
@@ -230,22 +230,22 @@ header {
     filter: brightness(1.2);
 }
 
-/* Responsive Footer */
+
 @media (max-width: 600px) {
     .footer-content {
-        flex-direction: column; /* Stack footer items on small screens */
+        flex-direction: column;
     }
 }
 
 
-/* Responsive Navbar */
+
 @media (max-width: 600px) {
     .navbar {
-        flex-direction: column; /* Stack navbar items vertically on small screens */
+        flex-direction: column; 
         align-items: center;
     }
 
     .navbar-container {
-        margin-top: 10px; /* Space between info and links */
+        margin-top: 10px; 
     }
 }
