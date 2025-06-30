@@ -17,29 +17,24 @@ body {
 
 
 header {
+    text-align: center;
     flex: 1;
 }
 
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
     padding: 15px;
-    position: sticky;
+    position: relative;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
     background: linear-gradient(90deg, #7f7a7a, #333);
 }
 
 
 .Info {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
+    align-items: center;
+    padding: 20px;
     gap: 5px;
     margin-left: 20px;
     border-radius: 8px; 
@@ -47,21 +42,29 @@ header {
 
 
 #Name {
-    font-size: 34px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: #FF6625;
+    font-size: 40px;
+    color: rgb(250, 250, 250);
+    font-family: myriad-pro, proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+    text-shadow: rgb(0, 0, 0) 0px 0px 30px;
+    white-space: nowrap;
+    white-space-collapse: collapse;
+    text-wrap-mode: nowrap;
 }
 
 #Profile {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 20px;
+    font-family: myriad-pro, proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
     color: #FFFFFF;
+    white-space: nowrap;
 }
 
 
 .navbar-container {
-    display: flex;
     gap: 20px;
 }
 
@@ -132,18 +135,12 @@ header {
 }
 
 .project {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-    border: 2px solid #FF6625;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-color: #FFFAF0;
-    background: linear-gradient(135deg, #FFFAF0 0%, #FFF5E0 100%);
-    width: 100%; 
-    max-width: 450px;
-    min-width: 200px; 
+    margin-bottom: 48px !important;
+    margin-top: 48px !important;
+    display: grid !important;
+    width: 100% !important;
+    position: relative !important; 
+    grid-template: "image image description" 1fr / 1fr 1fr 1fr;
 }
 
 .project p {
@@ -164,8 +161,26 @@ header {
     border-color: #FF8A47;
 }
 
+.project-container img{
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+.Project-Type{
+    font-family: proxima-nova, helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    color: rgb(73, 73, 73);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0px;
+    text-align: center;
+}
+
 .project-container {
-    display: flex;
+    display: block;
     flex-wrap: wrap; 
     gap: 50px; 
     margin-left: 40px;
@@ -174,16 +189,24 @@ header {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #E0E0E0;
+    margin: 20px;
 }
 
 .project-page{
-    display: grid;
-    gap:35px;
-    background-color: #F5F5F5;
-    padding: 20px; 
-    background: linear-gradient(180deg, #F5F5F5 0%, #FFF 100%);
+    display: inline-block;
+    text-align: left;
+    width:60%;
 }
 
+.project-pic{
+    grid-area: image;
+}
+
+.project-description{
+    padding-top: 24px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
 
 .footer {
     display: flex;
